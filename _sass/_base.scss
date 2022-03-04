@@ -238,9 +238,10 @@ blockquote {
 // Social (bottom)
 
 .social {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 1rem;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -256,6 +257,10 @@ blockquote {
   .contact-note {
     font-size: 0.8rem;
   }
+}
+
+.about-desc-fix {
+  margin-bottom: 0 !important;
 }
 
 
