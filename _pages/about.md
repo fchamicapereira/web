@@ -20,7 +20,7 @@ My research interests lie between Systems and Networking with a focus on automat
 
 ### Interests and hobbies
 
-#### Reading
+#### Books
 
 I deeply enjoy reading fantasy and science fiction books. I've developed a taste for epic fantasy---the bigger the books the better! This taste marries well with my favorite author, <a href='https://www.brandonsanderson.com/' target=_blank>Brandon Sanderson</a>, as he seems to enjoy writing at the speed of light. I am always looking out for every new book released by BrandoSando, with a strong preference for <a href='https://coppermind.net/wiki/Cosmere' target=_blank>Cosmere</a> content.
 
