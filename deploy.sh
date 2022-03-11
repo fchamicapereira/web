@@ -10,5 +10,5 @@ rm -rf _site
 mv /tmp/_site .
 git add -A
 git commit -m "rebuilt"
-git push origin gh-pages --force
+git push origin gh-pages 
 git checkout master
