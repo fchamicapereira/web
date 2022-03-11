@@ -7,7 +7,7 @@ cp -r _site /tmp
 git checkout gh-pages
 git pull origin gh-pages
 rm -rf _site
-mv /tmp/_site .
+mv /tmp/_site/* .
 git add -A
 git commit -m "rebuilt"
 git push origin gh-pages 
