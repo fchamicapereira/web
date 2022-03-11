@@ -2,7 +2,7 @@
 
 set -eou pipefail
 
-bundle exec jekyll build
+jekyll build
 cp -r _site /tmp
 git checkout gh-pages
 git pull origin gh-pages
