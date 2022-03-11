@@ -5,7 +5,7 @@ set -eoxu pipefail
 bundle exec jekyll build
 cp -r _site /tmp
 git checkout gh-pages
-git pull origin gh-pages
+git pull -X theirs --no-edit
 cp CNAME /tmp
 find . -path ./.git -prune -o \( \! -path ./.gitignore \) -exec rm -rf {} \; 2> /dev/null || true
 cp /tmp/CNAME .
