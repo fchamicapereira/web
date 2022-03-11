@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eou pipefail
+
 bundle exec jekyll build
 cp -r _site /tmp
 git checkout gh-pages
