@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eou pipefail
+set -eoxu pipefail
 
 bundle exec jekyll build
 cp -r _site /tmp
