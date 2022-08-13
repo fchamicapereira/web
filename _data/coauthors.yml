@@ -1,18 +1,23 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Sadok":
+  - firstname: ["Hugo"]
+    url: https://hsadok.com/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Kim":
+  - firstname: ["Daehyeok"]
+    url: https://daehyeok.kim/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Martins":
+  - firstname: ["Ruben"]
+    url: https://sat-group.github.io/ruben/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Sherry": 
+  - firstname: ["Justine"]
+    url: https://www.justinesherry.com/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Ramos":
+  - firstname: ["Fernando M. V."]
+    url: http://fvramos.at.di.fc.ul.pt/
+
+"Pedrosa":
+  - firstname: ["Luis"]
+    url: https://pedrosa.2y.net/
