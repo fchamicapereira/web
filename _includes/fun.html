@@ -1,0 +1,19 @@
+<!-- _includes/fun.html -->
+
+{% if project.publish -%}
+<script type="text/javascript" src="{{ '/assets/js/fun/' | append: page.program | append: '.js' | relative_url }}"></script>
+
+<div class="grid-sizer"></div>
+<div class="grid-item">
+
+  <div class="card hoverable">
+    <div class="card-body">
+      <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+      <p class="card-text">{{ project.description }}</p>
+        
+        {{ project.content }}
+    </div>
+  </div>
+
+</div>
+{%- endif %}

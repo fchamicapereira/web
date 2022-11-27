@@ -8,7 +8,7 @@ nav: true
 
 #### Books
 
-I deeply enjoy reading fantasy and science fiction books. I've developed a taste for epic fantasy---the bigger the books the better! This taste marries well with my favorite author, <a href='https://www.brandonsanderson.com/' target=_blank>Brandon Sanderson</a>, as he seems to enjoy writing at the speed of light. I am always looking out for every new book released by BrandoSando, with a strong preference for <a href='https://coppermind.net/wiki/Cosmere' target=_blank>Cosmere</a> content.
+I deeply enjoy reading fantasy and science fiction books. I've developed a taste for epic fantasy---the bigger the books the better! This taste marries well with my favorite author, <a href='https://www.brandonsanderson.com/' target=_blank>Brandon Sanderson</a>, as he seems to enjoy writing at the speed of light. I am always looking out for every new book released by Brandon Sanderson, with a strong preference for <a href='https://coppermind.net/wiki/Cosmere' target=_blank>Cosmere</a> content.
 
 Right now I'm diving in the <a href='https://en.wikipedia.org/wiki/Steven_Erikson' target=_blank>Steven Erikson</a>'s <a href='https://www.goodreads.com/series/43493-malazan-book-of-the-fallen' target=_blank>_Malazan Book of the Fallen_</a> tale.
 

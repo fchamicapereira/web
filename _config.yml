@@ -92,6 +92,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  fun:
+    output: true
+    permalink: /fun/:path/
 
 news_limit: 5
 
