@@ -3,6 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
+repository: fchamicapereira/web
 first_name: Francisco
 last_name: Pereira
 email: francisco.chamica.pereira@tecnico.ulisboa.pt

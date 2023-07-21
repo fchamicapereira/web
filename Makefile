@@ -1,7 +1,7 @@
 all: run
 
 run:
-	bundle exec jekyll serve
+	bundle exec jekyll serve -H 0.0.0.0 --trace
 
 deploy:
 	git branch -D gh-pages || true

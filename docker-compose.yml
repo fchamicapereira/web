@@ -1,0 +1,20 @@
+version: "3.2"
+services:
+    web:
+        build: .
+        image: web
+        ports:
+            - "4000:4000"
+    deploy:
+        build: .
+        image: web
+        volumes:
+            - type: bind
+              source: ~/.gitconfig
+              target: /home/docker/.gitconfig
+              read_only: true
+            - type: bind
+              source: ~/.ssh
+              target: /home/docker/.ssh
+              read_only: true
+        command: make deploy
