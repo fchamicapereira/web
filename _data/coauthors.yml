@@ -15,9 +15,13 @@
     url: https://www.justinesherry.com/
 
 "Ramos":
-  - firstname: ["Fernando M. V."]
+  - firstname: ["Fernando M. V.", "Fernando"]
     url: http://fvramos.at.di.fc.ul.pt/
 
 "Pedrosa":
   - firstname: ["Luis"]
     url: https://pedrosa.2y.net/
+
+"Correia":
+  - firstname: ["Miguel"]
+    url: https://www.dpss.inesc-id.pt/~mpc/
