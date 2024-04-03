@@ -1,2 +1,2 @@
 #!/bin/bash
-docker-compose up --build web
+docker compose up --build web
