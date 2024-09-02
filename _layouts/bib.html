@@ -101,7 +101,7 @@
             {%- endif %}
 
             {%- if entry.pdf %}
-            <a rel=”canonical” href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank"
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank"
                 class="btn btn-sm z-depth-0" role="button">PDF</a>
             {%- endif %}
 
@@ -128,7 +128,7 @@
             {%- endif %}
 
             {%- if entry.slides %}
-            <a rel=”canonical” href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" target="_blank"
+            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" target="_blank"
                 class="btn btn-sm z-depth-0" role="button">Slides</a>
             {%- endif %}
 
