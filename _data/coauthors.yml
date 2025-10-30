@@ -10,7 +10,7 @@
   - firstname: ["Ruben"]
     url: https://sat-group.github.io/ruben/
 
-"Sherry": 
+"Sherry":
   - firstname: ["Justine"]
     url: https://www.justinesherry.com/
 
@@ -25,3 +25,11 @@
 "Correia":
   - firstname: ["Miguel"]
     url: https://www.dpss.inesc-id.pt/~mpc/
+
+"Lei":
+  - firstname: ["Yiran"]
+    url: https://www.yiranlei.com/
+
+"Krishnamurthy":
+  - firstname: ["Arvind"]
+    url: https://sites.google.com/cs.washington.edu/arvind

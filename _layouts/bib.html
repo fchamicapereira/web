@@ -73,11 +73,7 @@
 
         <!-- Journal/Book title and date -->
         <div class="periodical">
-            {% if entry.type == "article" -%}
-            {{entry.journal}}
-            {%- elsif entry.type == "inproceedings" -%}
-            {{entry.series}}
-            {%- endif -%}
+            {{entry.label}}
         </div>
         {%- endif %}
 
