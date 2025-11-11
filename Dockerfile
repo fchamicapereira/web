@@ -1,8 +1,14 @@
-FROM --platform=linux/amd64 ubuntu:jammy
+FROM ubuntu:jammy
 
 # https://stackoverflow.com/questions/51023312/docker-having-issues-installing-apt-utils
 ARG DEBIAN_FRONTEND=noninteractive
+
 ENV TZ=Europe/Lisbon
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US:en
+ENV LC_ALL=en_US.UTF-8
+ENV GEM_HOME="/home/docker/gems"
+ENV PATH="/home/docker/gems/bin:$PATH"
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
@@ -35,13 +41,6 @@ RUN sudo dpkg-reconfigure --frontend noninteractive tzdata
 # We need this, otherwise the build blows up with unicode errors
 RUN sudo apt-get install -y locales
 RUN sudo locale-gen en_US.UTF-8
-ENV LANG=en_US.UTF-8
-ENV LANGUAGE=en_US:en
-ENV LC_ALL=en_US.UTF-8
-
-# Install Ruby Gems to ~/gems
-ENV GEM_HOME="/home/docker/gems"
-ENV PATH="/home/docker/gems/bin:$PATH"
 
 RUN gem install jekyll bundler
 
