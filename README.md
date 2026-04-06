@@ -18,6 +18,17 @@ This is my personal webpage, powered by [Jekyll](https://jekyllrb.com/) (Ruby on
 
 **Note:** the deploy operation was built to work for [GitHub Pages](https://pages.github.com/). Nevertheless, as it builds the final static product of the site, it should be useful to other services.
 
+## Site structure
+
+| Page         | URL               | In Nav |
+| ------------ | ----------------- | ------ |
+| About        | `/`               | yes    |
+| Publications | `/publications/`  | yes    |
+| Teaching     | `/teaching/`      | yes    |
+| Hobbies      | `/hobbies/`       | yes    |
+| Projects     | `/projects/`      | no     |
+| Fun          | `/fun/`           | no     |
+
 ## Navigating the project
 
 | Directory/Folder           | Description                                                        |
@@ -25,8 +36,14 @@ This is my personal webpage, powered by [Jekyll](https://jekyllrb.com/) (Ruby on
 | `_config.yml`              | Generic webpage configuration.                                     |
 | `assets`                   | Static assets for public access (*e.g.* CV, papers, images).       |
 | `_bibliography/papers.bib` | Publication bibliography.                                          |
-| `_pages`                   | Markdown sub pages accessible by the header.                       |
+| `_pages`                   | Markdown pages (one per site page listed above).                   |
 | `_layouts`                 | HTML layouts for each page.                                        |
+| `_includes`                | Reusable HTML partials included by layouts.                        |
+| `_projects`                | Markdown entries for individual project cards.                     |
+| `_fun`                     | Markdown entries for individual fun project cards.                 |
+| `_data`                    | YAML data files (*e.g.* co-author metadata).                       |
+| `_sass`                    | SASS stylesheets.                                                  |
+| `_plugins`                 | Custom Jekyll plugins.                                             |
 | `_site`                    | Final statically generated built site (`bundle exec jekyll build`) |
 
 ## Adding a new page

@@ -149,6 +149,16 @@ defaults:
       path:            "assets/**/*.*"
     values:
       sitemap:         false
+  - scope:
+      path:            ""
+      type:            "fun"
+    values:
+      sitemap:         false
+  - scope:
+      path:            ""
+      type:            "projects"
+    values:
+      sitemap:         false
 # Extras
 github: [metadata]
 
