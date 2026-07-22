@@ -10,7 +10,10 @@
   bibtex_show = {true},
   selected    = {true},
   pdf         = {lei-conext25-switchnic.pdf},
-  label       = {To appear at CoNEXT '25}
+  label       = {CoNEXT '25},
+  abstract    = {To support high-performance network functions, recent work has explored hybrid architectures that combine the flexibility of general-purpose processors with the performance of the PISA switch architecture. These designs partition code and state between switch platforms and general-purpose servers in pursuit of a "best of both worlds" design. However, integrating two separate platforms leads to the age-old challenge of ensuring high throughput and low latency while keeping distributed state consistent. We propose a new, tightly-coupled architecture called SwitchNIC that guarantees consistent state between switch and general-purpose processor, while offering 99th percentile packet latency of 6 𝜇s. The key to SwitchNIC’s performance is a novel, "on-path" state replication protocol, with latency further tightened by implementing general-purpose processing on locally-integrated ARM cores. We prototype SwitchNIC by deploying its state replication algorithms on a Tofino switch with Ethernet-attached ARM-based SmartNICs. SwitchNIC achieves up to 5.2× better energy efficiency and 6.4× better processing latency than server-based systems, none of which completely and correctly support shared state between platforms.},
+  url         = {https://dl.acm.org/doi/10.1145/3768993},
+  code        = {https://github.com/A-Dying-Pig/SwitchNIC}
 }
 
 @inproceedings{maestro-nsdi24,
