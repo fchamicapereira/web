@@ -446,6 +446,12 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
+          &.badge-poster {
+            background-color: $cyan-color;
+          }
+          &.badge-thesis {
+            background-color: $orange-color;
+          }
           a {
             color: white;
             &:hover {

@@ -9,6 +9,7 @@ nav: true
 #### <a href="https://tecnico.ulisboa.pt/en/" target=_blank>Instituto Superior Tecnico, University of Lisbon</a>
 
 - Teaching Assistant
+  - <a href='https://fenix.tecnico.ulisboa.pt/disciplinas/RC2/2026-2027/1-semestre' target=_blank>Computer Organization</a> [Fall 2026/2027]
   - <a href='https://fenix.tecnico.ulisboa.pt/disciplinas/IAC3610/2025-2026/2-semestre' target=_blank>Introduction to Computer Architecture</a> [Spring 2025/2026]
   - <a href='https://fenix.tecnico.ulisboa.pt/disciplinas/OC112/2025-2026/1-semestre' target=_blank>Computer Organization</a> [Fall 2025/2026]
   - <a href='https://fenix.tecnico.ulisboa.pt/disciplinas/RC2112/2025-2026/1-semestre' target=_blank>Computer Networks</a> [Fall 2025/2026]
