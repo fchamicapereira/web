@@ -1,0 +1,30 @@
+# Project cards on /projects/. Cards are grouped by category, and both
+# categories and cards appear in the order they are listed here.
+
+[[project]]
+title = "Maestro"
+description = "Automatically parallelizes sequential software Network Functions, configuring NIC RSS to spread traffic across CPU cores while preserving their original behavior."
+url = "https://maestro.inesc-id.pt/"
+github = "https://github.com/snaplab-dpss/maestro"
+category = "research"
+
+[[project]]
+title = "SyNAPSE"
+description = "A compiler that automatically generates Network Function accelerators across x86 and Tofino, exploring how to split work between them according to a target goal."
+url = "https://synapse.inesc-id.pt/"
+github = "https://github.com/synapse-nfs/synapse-sosr22"
+category = "research"
+
+[[project]]
+title = "Agentic Networks"
+description = "Revisiting the knowledge plane with LLM-based agents that coordinate across organizations on outage diagnosis, BGP hijack detection, and routing (HotNets 2026)."
+url = "https://fchamicapereira.github.io/agentic-networks/"
+github = "https://github.com/fchamicapereira/agentic-networks"
+category = "research"
+
+[[project]]
+title = "SIGCOMM'26 BlueField Tutorial"
+description = "Hands-on tutorial on programming NVIDIA BlueField-3 SmartNICs, marking congestion with DOCA Flow and running congestion control on the DPA with DOCA PCC."
+url = "https://fchamicapereira.github.io/sigcomm26-tutorial-bluefield/"
+github = "https://github.com/fchamicapereira/sigcomm26-tutorial-bluefield"
+category = "tutorials"
