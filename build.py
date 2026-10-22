@@ -325,7 +325,6 @@ def write_page(path, url, *, title, content, active=None, description="", head_e
         brand=brand,
         nav=nav_html(active),
         content=content,
-        year=str(today.year),
         updated=f"{today:%B} {today.day}, {today.year}",
     )
     out = OUT / path
