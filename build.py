@@ -314,7 +314,7 @@ def write_page(path, url, *, title, content, active=None, description="", head_e
     today = datetime.date.today()
     brand = ""
     if url != "/":
-        brand = f'<a class="navbar-brand title font-weight-lighter" href="{SITE_URL}/"><span class="font-weight-bold">{FIRST_NAME}</span> {LAST_NAME}</a>'
+        brand = f'<a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">{FIRST_NAME}</span> {LAST_NAME}</a>'
     page = render(
         "base.html",
         head_extra=head_extra,
@@ -372,7 +372,7 @@ def build():
         "Page not found",
         (ROOT / "pages" / "404.html").read_text(),
         description="Looks like there has been a mistake. Nothing exists here.",
-        head_extra=f'<meta http-equiv="refresh" content="3; url={SITE_URL}/" />',
+        head_extra='<meta http-equiv="refresh" content="3; url=/" />',
     )
 
     urls = "\n".join(f"<url><loc>{SITE_URL}{url}</loc></url>" for url in ["/"] + [url for _, url in NAV])
