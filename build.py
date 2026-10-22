@@ -29,7 +29,7 @@ CV = "/assets/pdf/cv.pdf"
 
 # The marquee's second line, and the line under it.
 MARQUEE_SUBTITLE = "Now showing · Systems & Networking"
-TAGLINE = "PhD student in systems and networking at Instituto Superior Técnico, with a Carnegie Mellon affiliation. Researcher at INESC-ID."
+TAGLINE = "PhD student at Instituto Superior Técnico, with a Carnegie Mellon affiliation. Researcher at INESC-ID."
 
 # How many news items the home page shows.
 HOME_NEWS = 5
