@@ -1,0 +1,33 @@
+# Blog posts on /hobbies/, newest first. Each post lives at /hobbies/<slug>/
+# and its text is in pages/posts/<slug>.html. Add `date = 2026-10-22` to show
+# a date next to the topic.
+
+[[post]]
+slug = "aterrados"
+topic = "Movies"
+title = "Aterrados (2017)"
+excerpt = "The one horror movie I'd pick if I had to pick just one."
+
+[[post]]
+slug = "rec"
+topic = "Movies"
+title = "REC (2007)"
+excerpt = "The horror movie I've watched the most."
+
+[[post]]
+slug = "motelx"
+topic = "Festivals"
+title = "MOTELX, every September in Lisbon"
+excerpt = "If you're in Portugal in September and like horror movies, go."
+
+[[post]]
+slug = "cosmere"
+topic = "Books"
+title = "Brandon Sanderson and the Cosmere"
+excerpt = "Epic fantasy, the bigger the books the better."
+
+[[post]]
+slug = "malazan"
+topic = "Books"
+title = "Currently reading: Malazan Book of the Fallen"
+excerpt = "Diving into Steven Erikson's epic."

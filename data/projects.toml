@@ -1,5 +1,14 @@
-# Project cards on /projects/. Cards are grouped by category, and both
-# categories and cards appear in the order they are listed here.
+# Project posters on /projects/. Projects are grouped by category, and both
+# categories and projects appear in the order they are listed here.
+
+# What each category is called in the lobby.
+[categories]
+research = "Now showing"
+tutorials = "Special screening"
+
+# Poster fields: `presents` is the small line at the top, `slogan` sits under
+# the title, `billing` is the credits block at the bottom, and `color`/`glow`
+# set the poster's background and the light behind the title.
 
 [[project]]
 title = "Maestro"
@@ -7,6 +16,11 @@ description = "Automatically parallelizes sequential software Network Functions,
 url = "https://maestro.inesc-id.pt/"
 github = "https://github.com/snaplab-dpss/maestro"
 category = "research"
+presents = "An NSDI ’24 picture"
+slogan = "One function. Every core."
+billing = "Francisco Pereira · Fernando M. V. Ramos · Luis Pedrosa — NSDI ’24"
+color = "#0d1016"
+glow = "rgba(169, 193, 214, .22)"
 
 [[project]]
 title = "SyNAPSE"
@@ -14,6 +28,11 @@ description = "A compiler that automatically generates Network Function accelera
 url = "https://synapse.inesc-id.pt/"
 github = "https://github.com/synapse-nfs/synapse-sosr22"
 category = "research"
+presents = "An SOSR ’22 picture"
+slogan = "Split the work. Find the best way to divide it."
+billing = "Francisco Pereira · Gonçalo Matos · Hugo Sadok · Daehyeok Kim · Ruben Martins · Justine Sherry · Fernando M. V. Ramos · Luis Pedrosa — SOSR ’22"
+color = "#101113"
+glow = "rgba(228, 231, 235, .12)"
 
 [[project]]
 title = "Agentic Networks"
@@ -21,10 +40,21 @@ description = "Revisiting the knowledge plane with LLM-based agents that coordin
 url = "https://fchamicapereira.github.io/agentic-networks/"
 github = "https://github.com/fchamicapereira/agentic-networks"
 category = "research"
+presents = "A HotNets ’26 picture"
+slogan = "The network is managing itself."
+billing = "Francisco Pereira · Justine Sherry · Pratiksha Thaker — HotNets ’26"
+color = "#0c0d10"
+glow = "rgba(179, 32, 47, .22)"
 
 [[project]]
 title = "SIGCOMM'26 BlueField Tutorial"
+poster_title = "BlueField Tutorial"
 description = "Hands-on tutorial on programming NVIDIA BlueField-3 SmartNICs, marking congestion with DOCA Flow and running congestion control on the DPA with DOCA PCC."
 url = "https://fchamicapereira.github.io/sigcomm26-tutorial-bluefield/"
 github = "https://github.com/fchamicapereira/sigcomm26-tutorial-bluefield"
 category = "tutorials"
+presents = "SIGCOMM ’26 · one session only"
+slogan = "Bring a laptop. Write C on a SmartNIC."
+billing = "A hands-on tutorial on NVIDIA BlueField-3 · DOCA Flow · DOCA PCC"
+color = "#0e1114"
+glow = "rgba(169, 193, 214, .16)"

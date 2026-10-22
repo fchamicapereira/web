@@ -1,93 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    {{ head_extra }}
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
-    <meta name="author" content="{{ name }}" />
-    <meta name="description" content="{{ description }}" />
-
-    <!-- Bootstrap & MDB -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
-
-    <!-- Code syntax highlighting (BibTeX blocks), switched by theme.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
-
-    <!-- Styles -->
-    <link rel="shortcut icon" href="/assets/img/favicon-32x32.png"/>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <meta name="author" content="{{ name }}">
+    <meta name="description" content="{{ description }}">
     <link rel="canonical" href="{{ canonical }}">
-
-    <!-- Dark mode -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
+    <link rel="icon" href="/assets/img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script>
+      // The TV powers on once per visit, not on every page.
+      try {
+        if (!sessionStorage.getItem("tv-on")) {
+          document.documentElement.classList.add("power-on");
+          sessionStorage.setItem("tv-on", "1");
+        }
+      } catch {}
+    </script>
+    <script src="/assets/js/site.js" defer></script>
   </head>
 
-  <body class="fixed-top-nav sticky-bottom-footer">
+  <body class="{{ body_class }}">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <filter id="silver" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values=".3 .59 .11 0 0  .3 .59 .11 0 0  .3 .59 .11 0 0  0 0 0 1 0"/>
+        <feComponentTransfer>
+          <feFuncR type="table" tableValues=".04 .40 .90"/>
+          <feFuncG type="table" tableValues=".045 .42 .92"/>
+          <feFuncB type="table" tableValues=".055 .45 .95"/>
+        </feComponentTransfer>
+      </filter>
+    </svg>
+    <canvas id="static" aria-hidden="true"></canvas>
 
-    <header>
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-          {{ brand }}
+    <div class="wrap">
+      <header class="front">
+        <h1 class="sr">{{ name }}</h1>
+        <a class="marquee" href="/">
+          <span class="board">
+            <span class="sr">{{ name }}</span>
+            {{ marquee }}
+          </span>
+          <svg class="cobweb" viewBox="0 0 100 100" aria-hidden="true"><path d="M0 0L100.0 0.0M0 0L97.0 24.2M0 0L86.6 50.0M0 0L68.2 73.1M0 0L46.9 88.3M0 0L22.5 97.4M0 0L0.0 100.0M16.0 0.0Q14.2 1.7 15.5 3.9Q13.2 5.3 13.9 8.0Q11.1 8.9 10.9 11.7Q8.3 11.6 7.5 14.1Q5.0 13.4 3.6 15.6Q1.6 14.2 0.0 16.0M32.0 0.0Q28.4 3.5 31.0 7.7Q26.4 10.7 27.7 16.0Q22.3 17.7 21.8 23.4Q16.6 23.2 15.0 28.3Q10.0 26.7 7.2 31.2Q3.2 28.4 0.0 32.0M50.0 0.0Q44.3 5.4 48.5 12.1Q41.3 16.7 43.3 25.0Q34.8 27.7 34.1 36.6Q25.9 36.3 23.5 44.1Q15.6 41.8 11.2 48.7Q5.1 44.4 0.0 50.0M70.0 0.0Q62.1 7.6 67.9 16.9Q57.8 23.4 60.6 35.0Q48.8 38.8 47.7 51.2Q36.3 50.9 32.9 61.8Q21.9 58.5 15.7 68.2Q7.1 62.2 0.0 70.0M92.0 0.0Q81.6 10.0 89.3 22.3Q76.0 30.7 79.7 46.0Q64.1 51.0 62.7 67.3Q47.7 66.8 43.2 81.2Q28.7 76.9 20.7 89.6Q9.3 81.7 0.0 92.0" fill="none" stroke="rgba(228,231,235,.32)" stroke-width=".6"/></svg>
+        </a>
+        <p class="tagline">{{ tagline }}</p>
+        <nav class="programme" aria-label="Sections">
+          {{ nav }}
+        </nav>
+      </header>
 
-          <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
+      <main>
+        {{ content }}
+      </main>
 
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-              {{ nav }}
-              <!-- Toggle theme mode -->
-              <div class="toggle-container">
-                <a id="light-toggle">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </a>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container mt-5">
-      {{ content }}
+      <footer>
+        <span>Last seen alive: {{ updated }}.</span>
+      </footer>
     </div>
 
-    <footer class="sticky-bottom mt-5">
-      <div class="container">
-        Last updated: {{ updated }}.
-      </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap & MDB scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-
-    <!-- Masonry & imagesLoaded (project cards) -->
-    <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
-
-    <!-- Abstract/BibTeX toggles -->
-    <script src="/assets/js/common.js"></script>
+    <div class="crt-lines" aria-hidden="true"></div>
+    <div class="crt-roll" aria-hidden="true"></div>
+    <div class="crt-tube" aria-hidden="true"></div>
+    <div class="osd-channel" aria-hidden="true">CH 03</div>
   </body>
 </html>

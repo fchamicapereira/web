@@ -1,0 +1,42 @@
+# Ticket stubs on /teaching/, newest first. Mark the course being taught right
+# now with `current = true`; it gets a "Now showing" stamp.
+
+institution = "Instituto Superior Técnico, University of Lisbon"
+institution_url = "https://tecnico.ulisboa.pt/en/"
+role = "Teaching Assistant"
+
+[[course]]
+name = "Computer Networks"
+url = "https://fenix.tecnico.ulisboa.pt/disciplinas/RC2/2026-2027/1-semestre"
+term = "Fall 2026/2027"
+current = true
+
+[[course]]
+name = "Introduction to Computer Architecture"
+url = "https://fenix.tecnico.ulisboa.pt/disciplinas/IAC3610/2025-2026/2-semestre"
+term = "Spring 2025/2026"
+
+[[course]]
+name = "Computer Organization"
+url = "https://fenix.tecnico.ulisboa.pt/disciplinas/OC112/2025-2026/1-semestre"
+term = "Fall 2025/2026"
+
+[[course]]
+name = "Computer Networks"
+url = "https://fenix.tecnico.ulisboa.pt/disciplinas/RC2112/2025-2026/1-semestre"
+term = "Fall 2025/2026"
+
+[[course]]
+name = "Distributed Systems"
+url = "https://fenix.tecnico.ulisboa.pt/disciplinas/SDis2/2022-2023/2-semestre"
+term = "Spring 2022/2023"
+
+[[course]]
+name = "Computer Networks"
+url = "https://fenix.tecnico.ulisboa.pt/disciplinas/RC-3/2022-2023/1-semestre"
+term = "Fall 2022/2023"
+
+[[course]]
+name = "Computer Networks"
+url = "https://fenix.tecnico.ulisboa.pt/disciplinas/RC-3/2021-2022/1-semestre"
+term = "Fall 2021/2022"
