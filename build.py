@@ -61,6 +61,14 @@ def esc(text):
     return html.escape(text, quote=False)
 
 
+def join_list(items):
+    """"a", "a and b", or "a, b, and c"."""
+    items = list(items)
+    if len(items) <= 2:
+        return " and ".join(items)
+    return ", ".join(items[:-1]) + ", and " + items[-1]
+
+
 def render(template, **values):
     """Fills the {{ name }} placeholders of templates/<template>."""
     text = (ROOT / "templates" / template).read_text()
@@ -412,10 +420,10 @@ def write_page(path, url, *, title, content, active=None, description="", body_c
     out.write_text(open_external_links_in_new_tab(page))
 
 
-def write_section(name, eyebrow, content):
+def write_section(name, eyebrow, content, description):
     """A top-level page such as /projects/, with its heading."""
     content = render("page.html", eyebrow=esc(eyebrow), heading=esc(name.capitalize()), content=content)
-    write_page(f"{name}/index.html", f"/{name}/", title=name, content=content, active=name)
+    write_page(f"{name}/index.html", f"/{name}/", title=name, content=content, active=name, description=description)
 
 
 def build():
@@ -438,14 +446,21 @@ def build():
         news=news_html(),
         selected_papers=filmography_html(selected, coauthors),
     )
-    write_page("index.html", "/", title="", content=about, active="about")
+    write_page("index.html", "/", title="", content=about, active="about", description=TAGLINE)
 
-    write_section("projects", "In the lobby", projects_html())
-    write_section("publications", "Filmography", filmography_html(papers, coauthors))
-    write_section("teaching", "Ticket stubs", teaching_html())
+    projects = load_toml("projects.toml")["project"]
+    write_section("projects", "In the lobby", projects_html(), f"Projects by {NAME}: {join_list(p['title'] for p in projects)}.")
+
+    # Venue names without their years, e.g. "NSDI" from "NSDI '24".
+    venues = dict.fromkeys(re.sub(r"\s*’\d{2}$", "", latex_to_text(p["fields"]["label"][0])) for p in papers if "label" in p["fields"])
+    write_section("publications", "Filmography", filmography_html(papers, coauthors), f"Publications by {NAME}, at {join_list(venues)}.")
+
+    teaching = load_toml("teaching.toml")
+    write_section("teaching", "Ticket stubs", teaching_html(), f"Courses {NAME} has taught as a {teaching['role']} at {teaching['institution']}.")
 
     hobbies = f'<div class="prose">\n{(ROOT / "pages" / "hobbies.html").read_text()}</div>\n{posts_html(posts)}'
-    write_section("hobbies", "Staff picks", hobbies)
+    topics = join_list(dict.fromkeys(post["topic"].lower() for post in posts))
+    write_section("hobbies", "Staff picks", hobbies, f"Posts by {NAME} about {topics}.")
     for post in posts:
         content = render(
             "post.html",
