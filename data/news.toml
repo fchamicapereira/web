@@ -1,0 +1,14 @@
+# News on the home page, shown newest first (the order here doesn't matter).
+# Only the month and year of `date` are shown. `text` may contain HTML links.
+
+[[item]]
+date = 2026-10-22
+text = 'Major thematic change to the website. It’s now horror movie themed!'
+
+[[item]]
+date = 2026-09-24
+text = 'Our paper <a href="/publications/#knowledgeplane-hotnets26">Instantiating the Knowledge Plane</a> was accepted at HotNets ’26!'
+
+[[item]]
+date = 2026-08-17
+text = 'We’re running a hands-on <a href="https://fchamicapereira.github.io/sigcomm26-tutorial-bluefield/">BlueField-3 SmartNIC tutorial</a> at SIGCOMM ’26. See you in Denver!'

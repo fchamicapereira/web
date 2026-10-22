@@ -31,6 +31,9 @@ CV = "/assets/pdf/cv.pdf"
 MARQUEE_SUBTITLE = "Now showing · Systems & Networking"
 TAGLINE = "PhD student in systems and networking at Instituto Superior Técnico, with a Carnegie Mellon affiliation. Researcher at INESC-ID."
 
+# How many news items the home page shows.
+HOME_NEWS = 5
+
 # Menu entries shown after "about" and "cv", in order: (title, url).
 NAV = [
     ("hobbies", "/hobbies/"),
@@ -311,6 +314,25 @@ def teaching_html():
     )
 
 
+def news_html():
+    """The newest items from data/news.toml, or nothing if there are none."""
+    items = sorted(load_toml("news.toml").get("item", []), key=lambda item: item["date"], reverse=True)[:HOME_NEWS]
+    if not items:
+        return ""
+    rows = "\n".join(
+        f'<li><time datetime="{item["date"]:%Y-%m}">{item["date"]:%b %Y}</time><p>{item["text"]}</p></li>' for item in items
+    )
+    return f"""<div class="newsreel">
+  <div class="view-head">
+    <p class="eyebrow">Newsreel</p>
+    <h2>News</h2>
+  </div>
+  <ol class="news">
+{rows}
+  </ol>
+</div>"""
+
+
 def post_meta(post):
     meta = post["topic"]
     if "date" in post:
@@ -413,6 +435,7 @@ def build():
         name=NAME,
         content=(ROOT / "pages" / "about.html").read_text(),
         social=social_html(),
+        news=news_html(),
         selected_papers=filmography_html(selected, coauthors),
     )
     write_page("index.html", "/", title="", content=about, active="about")

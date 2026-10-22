@@ -148,6 +148,13 @@ p { margin: 0; }
 
 .recent { margin-top: 4rem; }
 
+/* News, as the newsreel before the feature */
+.newsreel { margin-top: 4rem; }
+.news { list-style: none; margin: 0; padding: 0; }
+.news li { display: grid; grid-template-columns: 6rem minmax(0, 1fr); gap: 1.25rem; align-items: baseline; padding-block: .9rem; border-top: 1px solid var(--rule); }
+.news li:last-child { border-bottom: 1px solid var(--rule); }
+.news time { font: 400 .8rem/1.4 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--moon); font-variant-numeric: tabular-nums; }
+
 /* Publications as a filmography */
 .films { list-style: none; margin: 0; padding: 0; }
 .film { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 1.25rem; padding-block: 1.4rem; border-top: 1px solid var(--rule); }
@@ -274,6 +281,7 @@ footer { margin-top: 3.75rem; padding-top: 1.25rem; border-top: 1px solid var(--
   .counter { grid-template-columns: minmax(0, 1fr); }
   .counter .filmstrip { order: -1; max-width: 17rem; }
   .film { grid-template-columns: minmax(0, 1fr); gap: .4rem; }
+  .news li { grid-template-columns: minmax(0, 1fr); gap: .3rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
