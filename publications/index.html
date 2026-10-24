@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Francisco Pereira | publications</title>
+    <meta name="author" content="Francisco Pereira">
+    <meta name="description" content="Publications by Francisco Pereira, at HotNets, CoNEXT, NSDI, SIGCOMM, and SOSR.">
+    <link rel="canonical" href="https://fchamicapereira.me/publications/">
+    <!-- What apps show when a link to this page is shared. -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Francisco Pereira">
+    <meta property="og:title" content="Francisco Pereira | publications">
+    <meta property="og:description" content="Publications by Francisco Pereira, at HotNets, CoNEXT, NSDI, SIGCOMM, and SOSR.">
+    <meta property="og:url" content="https://fchamicapereira.me/publications/">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <link rel="preload" href="/assets/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/ibm-plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+
+  <body class="">
+    <canvas id="static" aria-hidden="true"></canvas>
+
+    <div class="wrap">
+      <header class="front">
+        <h1 class="sr">Francisco Pereira</h1>
+        <a class="marquee" href="/">
+          <span class="board">
+            <span class="sr">Francisco Pereira</span>
+            <span class="line big" aria-hidden="true"><span class="word"><span class="l" style="transform: translateY(0.005em) rotate(-1.40deg)">F</span><span class="l" style="transform: translateY(0.025em) rotate(1.18deg)">R</span><span class="l" style="transform: translateY(0.026em) rotate(-1.24deg)">A</span><span class="l" style="transform: translateY(-0.008em) rotate(0.24deg)">N</span><span class="l" style="transform: translateY(0.020em) rotate(1.48deg)">C</span><span class="l" style="transform: translateY(0.001em) rotate(-0.94deg)">I</span><span class="l" style="transform: translateY(0.005em) rotate(0.05deg)">S</span><span class="l" style="transform: translateY(-0.011em) rotate(0.62deg)">C</span><span class="l" style="transform: translateY(0.009em) rotate(-1.23deg)">O</span></span><span class="word"><span class="l" style="transform: translateY(-0.000em) rotate(0.64deg)">P</span><span class="l" style="transform: translateY(0.008em) rotate(0.68deg)">E</span><span class="l loose" style="transform: translateY(-0.007em) rotate(-0.14deg)">R</span><span class="l" style="transform: translateY(-0.003em) rotate(0.96deg)">E</span><span class="l" style="transform: translateY(0.020em) rotate(-0.80deg)">I</span><span class="l" style="transform: translateY(-0.016em) rotate(1.21deg)">R</span><span class="l" style="transform: translateY(0.019em) rotate(-1.30deg)">A</span></span></span>
+<span class="line small" aria-hidden="true"><span class="word"><span class="l" style="transform: translateY(-0.002em) rotate(-0.12deg)">N</span><span class="l" style="transform: translateY(0.014em) rotate(-0.20deg)">O</span><span class="l" style="transform: translateY(-0.009em) rotate(-0.98deg)">W</span></span><span class="word"><span class="l" style="transform: translateY(-0.028em) rotate(1.35deg)">S</span><span class="l" style="transform: translateY(0.003em) rotate(-1.31deg)">H</span><span class="l" style="transform: translateY(-0.021em) rotate(0.31deg)">O</span><span class="l" style="transform: translateY(-0.011em) rotate(0.65deg)">W</span><span class="l" style="transform: translateY(0.017em) rotate(-0.19deg)">I</span><span class="l" style="transform: translateY(0.029em) rotate(1.25deg)">N</span><span class="l" style="transform: translateY(0.017em) rotate(-1.48deg)">G</span></span><span class="word"><span class="l" style="transform: translateY(0.004em) rotate(-0.52deg)">·</span></span><span class="word"><span class="l" style="transform: translateY(-0.025em) rotate(0.80deg)">S</span><span class="l" style="transform: translateY(0.005em) rotate(1.18deg)">Y</span><span class="l" style="transform: translateY(0.010em) rotate(-0.69deg)">S</span><span class="l" style="transform: translateY(0.012em) rotate(0.78deg)">T</span><span class="l" style="transform: translateY(-0.008em) rotate(-0.72deg)">E</span><span class="l" style="transform: translateY(0.012em) rotate(0.04deg)">M</span><span class="l" style="transform: translateY(0.024em) rotate(-0.09deg)">S</span></span><span class="word"><span class="l" style="transform: translateY(-0.029em) rotate(-0.49deg)">&amp;</span></span><span class="word"><span class="l" style="transform: translateY(-0.001em) rotate(-0.04deg)">N</span><span class="l" style="transform: translateY(-0.008em) rotate(-1.29deg)">E</span><span class="l" style="transform: translateY(0.001em) rotate(-0.70deg)">T</span><span class="l" style="transform: translateY(0.029em) rotate(-1.34deg)">W</span><span class="l" style="transform: translateY(0.020em) rotate(-0.24deg)">O</span><span class="l" style="transform: translateY(-0.024em) rotate(0.57deg)">R</span><span class="l" style="transform: translateY(0.005em) rotate(0.85deg)">K</span><span class="l" style="transform: translateY(-0.015em) rotate(-0.71deg)">I</span><span class="l" style="transform: translateY(0.015em) rotate(0.29deg)">N</span><span class="l" style="transform: translateY(0.001em) rotate(0.94deg)">G</span></span></span>
+          </span>
+          <svg class="cobweb" viewBox="0 0 100 100" aria-hidden="true"><path d="M0 0L100.0 0.0M0 0L97.0 24.2M0 0L86.6 50.0M0 0L68.2 73.1M0 0L46.9 88.3M0 0L22.5 97.4M0 0L0.0 100.0M16.0 0.0Q14.2 1.7 15.5 3.9Q13.2 5.3 13.9 8.0Q11.1 8.9 10.9 11.7Q8.3 11.6 7.5 14.1Q5.0 13.4 3.6 15.6Q1.6 14.2 0.0 16.0M32.0 0.0Q28.4 3.5 31.0 7.7Q26.4 10.7 27.7 16.0Q22.3 17.7 21.8 23.4Q16.6 23.2 15.0 28.3Q10.0 26.7 7.2 31.2Q3.2 28.4 0.0 32.0M50.0 0.0Q44.3 5.4 48.5 12.1Q41.3 16.7 43.3 25.0Q34.8 27.7 34.1 36.6Q25.9 36.3 23.5 44.1Q15.6 41.8 11.2 48.7Q5.1 44.4 0.0 50.0M70.0 0.0Q62.1 7.6 67.9 16.9Q57.8 23.4 60.6 35.0Q48.8 38.8 47.7 51.2Q36.3 50.9 32.9 61.8Q21.9 58.5 15.7 68.2Q7.1 62.2 0.0 70.0M92.0 0.0Q81.6 10.0 89.3 22.3Q76.0 30.7 79.7 46.0Q64.1 51.0 62.7 67.3Q47.7 66.8 43.2 81.2Q28.7 76.9 20.7 89.6Q9.3 81.7 0.0 92.0" fill="none" stroke="rgba(228,231,235,.32)" stroke-width=".6"/></svg>
+        </a>
+        <p class="tagline">PhD student at Instituto Superior Técnico, with a Carnegie Mellon affiliation. Researcher at INESC-ID.</p>
+        <p class="contact">
+          <a href="mailto:%66%72%61%6E%63%69%73%63%6F.%63%68%61%6D%69%63%61.%70%65%72%65%69%72%61@%74%65%63%6E%69%63%6F.%75%6C%69%73%62%6F%61.%70%74"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6 8.5 7 8.5-7"/></svg><span class="sr">Email:</span> &#102;&#114;&#97;&#110;&#99;&#105;&#115;&#99;&#111;&#46;&#99;&#104;&#97;&#109;&#105;&#99;&#97;&#46;&#112;&#101;&#114;&#101;&#105;&#114;&#97;&#64;&#116;&#101;&#99;&#110;&#105;&#99;&#111;&#46;&#117;&#108;&#105;&#115;&#98;&#111;&#97;&#46;&#112;&#116;</a>
+<a href="https://github.com/fchamicapereira" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span class="sr">GitHub:</span> fchamicapereira</a>
+<a href="https://www.linkedin.com/in/fchamicapereira" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg><span class="sr">LinkedIn:</span> fchamicapereira</a>
+        </p>
+        <nav class="programme" aria-label="Sections">
+          <a href="/">about</a>
+<a href="/assets/pdf/cv.pdf" target="_blank">cv ↗</a>
+<a href="/hobbies/">hobbies</a>
+<a href="/projects/">projects</a>
+<a href="/publications/" aria-current="page">publications</a>
+<a href="/teaching/">teaching</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="view-head">
+  <p class="eyebrow">Filmography</p>
+  <h2>Publications</h2>
+</div>
+<ol class="films">
+<li class="film" id="knowledgeplane-hotnets26">
+  <span class="year">2026</span>
+  <div class="film-body">
+    <h3>Instantiating the Knowledge Plane</h3>
+    <div class="authors"><strong>Francisco Pereira</strong>, <a href="https://www.justinesherry.com/" target="_blank" rel="noopener noreferrer">Justine Sherry</a>, and <a href="https://cs.stanford.edu/~prthaker/" target="_blank" rel="noopener noreferrer">Pratiksha Thaker</a></div>
+    <div class="venue">HotNets ’26</div>
+    <div class="actions"><button class="btn" type="button" aria-expanded="false" aria-controls="knowledgeplane-hotnets26-abstract">Abstract</button><button class="btn" type="button" aria-expanded="false" aria-controls="knowledgeplane-hotnets26-bibtex">BibTeX</button><a class="btn" href="/assets/pdf/pereira-agentic-networks-hotnets26.pdf" target="_blank">PDF</a><a class="btn" href="https://fchamicapereira.github.io/agentic-networks/" target="_blank" rel="noopener noreferrer">Web</a></div>
+    <div class="panel" id="knowledgeplane-hotnets26-abstract" hidden><p>In 2003, Clark et al. proposed the "knowledge plane", a layer of intelligent agents that share rich information about network state in order to collaboratively manage the Internet across administrative boundaries. The technology of the day lacked the two capabilities it demanded most: reasoning and unstructured communication. Thus, automated network management has remained largely confined to single domains, while interdomain problems are still resolved by human operators on the phone. We argue that agentic large language models can finally unlock the potential of the knowledge plane, but that doing so will require solving new research problems that arise particularly in this decentralized, multi-agent, coopetitive setting that have received limited attention in the literature thus far.</p></div><div class="panel" id="knowledgeplane-hotnets26-bibtex" hidden><pre id="knowledgeplane-hotnets26-bibtex-text">@inproceedings{knowledgeplane-hotnets26,
+  author = {Pereira, Francisco and Sherry, Justine and Thaker, Pratiksha},
+  title = {Instantiating the Knowledge Plane},
+  booktitle = {Proceedings of the 25th ACM Workshop on Hot Topics in Networks},
+  year = {2026},
+  address = {Salt Lake City, UT, USA},
+  publisher = {Association for Computing Machinery},
+  month = nov,
+  url = {https://doi.org/10.1145/3847290.3859939},
+  doi = {10.1145/3847290.3859939},
+  numpages = {11},
+  abbr = {article},
+  pdf = {pereira-agentic-networks-hotnets26.pdf},
+  website = {https://fchamicapereira.github.io/agentic-networks/},
+  selected = {true},
+  bibtex_show = {true},
+  label = {HotNets '26}
+}</pre><button class="btn copy" type="button" data-copy="knowledgeplane-hotnets26-bibtex-text">Copy BibTeX</button></div>
+  </div>
+</li>
+<li class="film" id="switchnic-conext25">
+  <span class="year">2025</span>
+  <div class="film-body">
+    <h3>SwitchNIC: An Hybrid Architecture for Network Functions with Fast and Consistent Shared State</h3>
+    <div class="authors"><a href="https://www.yiranlei.com/" target="_blank" rel="noopener noreferrer">Yiran Lei</a>, <strong>Francisco Pereira</strong>, <a href="https://www.justinesherry.com/" target="_blank" rel="noopener noreferrer">Justine Sherry</a>, and <a href="https://sites.google.com/cs.washington.edu/arvind" target="_blank" rel="noopener noreferrer">Arvind Krishnamurthy</a></div>
+    <div class="venue">CoNEXT ’25</div>
+    <div class="actions"><button class="btn" type="button" aria-expanded="false" aria-controls="switchnic-conext25-abstract">Abstract</button><button class="btn" type="button" aria-expanded="false" aria-controls="switchnic-conext25-bibtex">BibTeX</button><a class="btn" href="/assets/pdf/lei-conext25-switchnic.pdf" target="_blank">PDF</a><a class="btn" href="https://github.com/A-Dying-Pig/SwitchNIC" target="_blank" rel="noopener noreferrer">Code</a></div>
+    <div class="panel" id="switchnic-conext25-abstract" hidden><p>To support high-performance network functions, recent work has explored hybrid architectures that combine the flexibility of general-purpose processors with the performance of the PISA switch architecture. These designs partition code and state between switch platforms and general-purpose servers in pursuit of a "best of both worlds" design. However, integrating two separate platforms leads to the age-old challenge of ensuring high throughput and low latency while keeping distributed state consistent. We propose a new, tightly-coupled architecture called SwitchNIC that guarantees consistent state between switch and general-purpose processor, while offering 99th percentile packet latency of 6 𝜇s. The key to SwitchNIC’s performance is a novel, "on-path" state replication protocol, with latency further tightened by implementing general-purpose processing on locally-integrated ARM cores. We prototype SwitchNIC by deploying its state replication algorithms on a Tofino switch with Ethernet-attached ARM-based SmartNICs. SwitchNIC achieves up to 5.2× better energy efficiency and 6.4× better processing latency than server-based systems, none of which completely and correctly support shared state between platforms.</p></div><div class="panel" id="switchnic-conext25-bibtex" hidden><pre id="switchnic-conext25-bibtex-text">@inproceedings{switchnic-conext25,
+  author = {Lei, Yiran and Pereira, Francisco and Sherry, Justine and Krishnamurthy, Arvind},
+  title = {SwitchNIC: An Hybrid Architecture for Network Functions with Fast and Consistent Shared State},
+  journal = {Proceedings of the ACM on Networking},
+  year = {2025},
+  abbr = {article},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = {lei-conext25-switchnic.pdf},
+  label = {CoNEXT '25},
+  url = {https://dl.acm.org/doi/10.1145/3768993},
+  code = {https://github.com/A-Dying-Pig/SwitchNIC}
+}</pre><button class="btn copy" type="button" data-copy="switchnic-conext25-bibtex-text">Copy BibTeX</button></div>
+  </div>
+</li>
+<li class="film" id="maestro-nsdi24">
+  <span class="year">2024</span>
+  <div class="film-body">
+    <h3>Automatic Parallelization of Software Network Functions</h3>
+    <div class="authors"><strong>Francisco Pereira</strong>, <a href="https://scholar.google.com/citations?user=NhC7jcQAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener noreferrer">Fernando M. V. Ramos</a>, and <a href="https://pedrosa.2y.net/" target="_blank" rel="noopener noreferrer">Luis Pedrosa</a></div>
+    <div class="venue">NSDI ’24</div>
+    <div class="actions"><button class="btn" type="button" aria-expanded="false" aria-controls="maestro-nsdi24-abstract">Abstract</button><button class="btn" type="button" aria-expanded="false" aria-controls="maestro-nsdi24-bibtex">BibTeX</button><a class="btn" href="/assets/pdf/pereira-nsdi24-maestro.pdf" target="_blank">PDF</a><a class="btn" href="https://github.com/snaplab-dpss/maestro" target="_blank" rel="noopener noreferrer">Code</a><a class="btn" href="https://github.com/snaplab-dpss/maestro-eval" target="_blank" rel="noopener noreferrer">Evaluation</a><a class="btn" href="/assets/pdf/pereira-nsdi24-maestro-slides.pdf" target="_blank">Slides</a><a class="btn" href="https://maestro.inesc-id.pt/" target="_blank" rel="noopener noreferrer">Web</a><a class="btn" href="https://www.youtube.com/watch?v=6BtquCNQv_M" target="_blank" rel="noopener noreferrer">Talk video</a></div>
+    <div class="panel" id="maestro-nsdi24-abstract" hidden><p>Software network functions (NFs) trade-off flexibility and ease of deployment for an increased challenge of performance. The traditional way to increase NF performance is by distributing traffic to multiple CPU cores, but this poses a significant challenge: how to parallelize an NF without breaking its semantics? We propose Maestro, a tool that analyzes a sequential implementation of an NF and automatically generates an enhanced parallel version that carefully configures the NIC’s Receive Side Scaling mechanism to distribute traffic across cores, while preserving semantics. When possible, Maestro orchestrates a shared-nothing architecture, with each core operating independently without shared memory coordination, maximizing performance. Otherwise, Maestro choreographs a fine-grained read-write locking mechanism that optimizes operation for typical Internet traffic. We parallelized 8 software NFs and show that they generally scale-up linearly until bottlenecked by PCIe when using small packets or by 100 Gbps line-rate with typical Internet traffic. Maestro further outperforms modern hardware-based transactional memory mechanisms, even for challenging parallel-unfriendly workloads.</p></div><div class="panel" id="maestro-nsdi24-bibtex" hidden><pre id="maestro-nsdi24-bibtex-text">@inproceedings{maestro-nsdi24,
+  author = {Pereira, Francisco and Ramos, Fernando M. V. and Pedrosa, Luis},
+  title = {Automatic Parallelization of Software Network Functions},
+  booktitle = {21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)},
+  year = {2024},
+  address = {Santa Clara, CA},
+  url = {https://www.usenix.org/conference/nsdi24/presentation/pereira},
+  publisher = {USENIX Association},
+  month = apr,
+  abbr = {article},
+  selected = {true},
+  code = {https://github.com/snaplab-dpss/maestro},
+  eval = {https://github.com/snaplab-dpss/maestro-eval},
+  talk = {https://www.youtube.com/watch?v=6BtquCNQv_M},
+  pdf = {pereira-nsdi24-maestro.pdf},
+  slides = {pereira-nsdi24-maestro-slides.pdf},
+  website = {https://maestro.inesc-id.pt/},
+  bibtex_show = {true},
+  label = {NSDI '24}
+}</pre><button class="btn copy" type="button" data-copy="maestro-nsdi24-bibtex-text">Copy BibTeX</button></div>
+  </div>
+</li>
+<li class="film" id="amado-sigcomm23">
+  <span class="year">2023</span>
+  <div class="film-body">
+    <h3>Poster: In-Network ML Feature Computation for Malicious Traffic Detection</h3>
+    <div class="authors">João Romeiras Amado, <strong>Francisco Pereira</strong>, Salvatore Signorello, <a href="https://www.dpss.inesc-id.pt/~mpc/" target="_blank" rel="noopener noreferrer">Miguel Correia</a>, and <a href="https://scholar.google.com/citations?user=NhC7jcQAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener noreferrer">Fernando M. V. Ramos</a></div>
+    <div class="venue">SIGCOMM ’23 <span class="tag">poster</span></div>
+    <div class="actions"><button class="btn" type="button" aria-expanded="false" aria-controls="amado-sigcomm23-abstract">Abstract</button><button class="btn" type="button" aria-expanded="false" aria-controls="amado-sigcomm23-bibtex">BibTeX</button><a class="btn" href="/assets/pdf/amado-sigcomm23-poster.pdf" target="_blank">PDF</a></div>
+    <div class="panel" id="amado-sigcomm23-abstract" hidden><p>We present Peregrine, a malicious traffic detector that offloads part of its computation to a programmable switch. The idea is to partition detection, by moving the ML feature computation module from a middlebox server to a switch data plane. The key innovation unlocked—computing the ML input features over all traffic—results in a significant improvement in detection performance: in our evaluation, up to 5.7x over the state of the art.</p></div><div class="panel" id="amado-sigcomm23-bibtex" hidden><pre id="amado-sigcomm23-bibtex-text">@inproceedings{amado-sigcomm23,
+  author = {Romeiras Amado, Jo\~{a}o and Pereira, Francisco and Signorello, Salvatore and Correia, Miguel and Ramos, Fernando M. V.},
+  title = {Poster: In-Network ML Feature Computation for Malicious Traffic Detection},
+  year = {2023},
+  isbn = {9798400702365},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3603269.3610866},
+  doi = {10.1145/3603269.3610866},
+  booktitle = {Proceedings of the ACM SIGCOMM 2023 Conference},
+  pages = {1105–1107},
+  numpages = {3},
+  location = {New York, NY, USA},
+  pdf = {amado-sigcomm23-poster.pdf},
+  abbr = {poster},
+  selected = {false},
+  bibtex_show = {true},
+  label = {SIGCOMM '23}
+}</pre><button class="btn copy" type="button" data-copy="amado-sigcomm23-bibtex-text">Copy BibTeX</button></div>
+  </div>
+</li>
+<li class="film" id="synapse-sosr22">
+  <span class="year">2022</span>
+  <div class="film-body">
+    <h3>Automatic Generation of Network Function Accelerators Using Component-Based Synthesis</h3>
+    <div class="authors"><strong>Francisco Pereira</strong>, Gonçalo Matos, <a href="https://hsadok.com/" target="_blank" rel="noopener noreferrer">Hugo Sadok</a>, <a href="https://daehyeok.kim/" target="_blank" rel="noopener noreferrer">Daehyeok Kim</a>, <a href="https://sat-group.github.io/ruben/" target="_blank" rel="noopener noreferrer">Ruben Martins</a>, <a href="https://www.justinesherry.com/" target="_blank" rel="noopener noreferrer">Justine Sherry</a>, <a href="https://scholar.google.com/citations?user=NhC7jcQAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener noreferrer">Fernando M. V. Ramos</a>, and <a href="https://pedrosa.2y.net/" target="_blank" rel="noopener noreferrer">Luis Pedrosa</a></div>
+    <div class="venue">SOSR ’22</div>
+    <div class="actions"><button class="btn" type="button" aria-expanded="false" aria-controls="synapse-sosr22-abstract">Abstract</button><button class="btn" type="button" aria-expanded="false" aria-controls="synapse-sosr22-bibtex">BibTeX</button><a class="btn" href="/assets/pdf/synapse-sosr22.pdf" target="_blank">PDF</a><a class="btn" href="https://github.com/synapse-nfs/synapse-sosr22" target="_blank" rel="noopener noreferrer">Code</a><a class="btn" href="https://synapse.inesc-id.pt/" target="_blank" rel="noopener noreferrer">Web</a><a class="btn" href="https://www.youtube.com/watch?v=zEn3Jn2LS48" target="_blank" rel="noopener noreferrer">Talk video</a></div>
+    <div class="panel" id="synapse-sosr22-abstract" hidden><p>Designing networked systems that take best advantage of heterogeneous dataplanes - e.g., dividing packet processing across both a PISA switch and an x86 CPU - can improve performance, efficiency, and resource consumption. However, programming for multiple hardware targets remains challenging because developers must learn platform-specific languages and skills. While some ’write-once, run-anywhere’ compilers exist, they are unable to consider a range of implementation options to tune the NF to meet performance objectives. In this short paper, we explore preliminary ideas towards a compiler that explores a large search space of different mappings of functionality to hardware. This exploration can be tuned for a programmer-specified objective, such as minimizing memory consumption or maximizing network throughput. Our initial prototype, SyNAPSE, is based on a methodology called component-based synthesis and supports deployments across x86 and Tofino platforms. Relative to a baseline compiler which only generates one deployment decision, SyNAPSE uncovers thousands of deployment options - including a deployment which reduces the amount of controller traffic by an order of magnitude, and another deployment which halves memory usage.</p></div><div class="panel" id="synapse-sosr22-bibtex" hidden><pre id="synapse-sosr22-bibtex-text">@inproceedings{synapse-sosr22,
+  author = {Pereira, Francisco and Matos, Gonçalo and Sadok, Hugo and Kim, Daehyeok and Martins, Ruben and Sherry, Justine and Ramos, Fernando M. V. and Pedrosa, Luis},
+  title = {Automatic Generation of Network Function Accelerators Using Component-Based Synthesis},
+  year = {2022},
+  isbn = {9781450398923},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3563647.3563656},
+  doi = {10.1145/3563647.3563656},
+  booktitle = {Proceedings of the Symposium on SDN Research},
+  pages = {89–97},
+  numpages = {9},
+  keywords = {in-network compute, programming abstraction, network function virtualization},
+  location = {Virtual Event},
+  month = oct,
+  abbr = {article},
+  pdf = {synapse-sosr22.pdf},
+  selected = {true},
+  bibtex_show = {true},
+  website = {https://synapse.inesc-id.pt/},
+  code = {https://github.com/synapse-nfs/synapse-sosr22},
+  talk = {https://www.youtube.com/watch?v=zEn3Jn2LS48},
+  label = {SOSR~'22}
+}</pre><button class="btn copy" type="button" data-copy="synapse-sosr22-bibtex-text">Copy BibTeX</button></div>
+  </div>
+</li>
+</ol>
+
+      </main>
+
+      <footer>
+        <span>Last seen alive: October 24, 2026.</span>
+      </footer>
+    </div>
+
+    <div class="crt-lines" aria-hidden="true"></div>
+    <div class="crt-tube" aria-hidden="true"></div>
+    <div class="osd-channel" aria-hidden="true">CH 03</div>
+  </body>
+</html>
