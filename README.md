@@ -26,7 +26,7 @@ Pushing to `master` builds the site and publishes it to the `gh-pages` branch, w
 | `data/teaching.toml`  | Ticket stubs on `/teaching/`.                                               |
 | `data/posts.toml`     | Blog posts on `/hobbies/`: slug, topic, title, excerpt, optional date.      |
 | `data/news.toml`      | News on the home page: date and text; the newest five are shown.            |
-| `public/`             | Files copied as-is: `site.css`, `site.js`, images, PDFs (including the CV), `CNAME`. |
+| `public/`             | Files copied as-is: `site.css`, `site.js`, fonts, images, PDFs (including the CV), `CNAME`. |
 
 ## Adding a publication
 

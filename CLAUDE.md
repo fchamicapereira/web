@@ -7,9 +7,10 @@ Personal website built by `build.py` (Python standard library only, no third-par
 ## Design
 
 - The site is a spooky homage to cinema: a movie theatre's programme playing on an old CRT at 3am.
-- Spooky, not vintage and not neon: cold, modern palette (near-black, cool greys, moonlight accent; red only for ticket stamps). Dark only.
+- Spooky, not vintage and not neon: near-black and cool greys, with soft accent colours that each mark one kind of information (moonlight blue for links and labels, violet for venues, phosphor green for dates, rose for blog topics; red only for ticket stamps). Dark only.
 - No illustrated backdrops and nothing silly (no balloons, no Halloween clip-art). Homage through allusions, never film stills, logos or characters.
-- Content stays readable first. Every animation must stop under `prefers-reduced-motion`, and nothing flashes more than 3 times a second.
+- It is a professional site first: content stays readable before anything else. No flickering, no moving effects over text, and nothing that resizes or jumps as the page loads (fonts are self-hosted in `public/assets/fonts/`, preloaded, and use `font-display: optional`). The faint TV static stays animated behind the page. Every animation must stop under `prefers-reduced-motion`, and nothing flashes more than 3 times a second.
+- No photo of me.
 
 ## Scripts
 

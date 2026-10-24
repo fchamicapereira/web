@@ -25,17 +25,6 @@ drawStatic();
 addEventListener("resize", () => { sizeStatic(); drawStatic(); });
 if (!reduceMotion) setInterval(() => { if (!document.hidden) drawStatic(); }, 83);
 
-// Now and then the tracking slips.
-if (!reduceMotion) {
-  const wrap = document.querySelector(".wrap");
-  (function slip() {
-    setTimeout(() => {
-      wrap.classList.add("jitter");
-      setTimeout(() => { wrap.classList.remove("jitter"); slip(); }, 90);
-    }, 9000 + Math.random() * 12000);
-  })();
-}
-
 // Abstract and BibTeX buttons open the panel they control.
 for (const button of document.querySelectorAll("button[aria-controls]")) {
   const panel = document.getElementById(button.getAttribute("aria-controls"));
