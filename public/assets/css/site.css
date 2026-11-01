@@ -93,7 +93,6 @@ a.marquee { color: inherit; text-decoration: none; }
 .board .line { display: flex; flex-wrap: wrap; justify-content: center; column-gap: .35em; }
 .board .word { display: inline-flex; column-gap: .08em; white-space: nowrap; }
 .board .line.big { font: 400 clamp(2rem, 7.5vw, 4.3rem)/1.05 var(--f-marquee); letter-spacing: .02em; }
-.board .line.small { font: 400 clamp(.95rem, 2.4vw, 1.35rem)/1.2 var(--f-marquee); letter-spacing: .08em; margin-top: .35rem; }
 .board .l { display: inline-block; }
 .board .l.loose { transform: translateY(.04em) rotate(9deg) !important; transform-origin: top left; }
 .cobweb { position: absolute; top: -1px; left: -1px; width: 5.5rem; height: 5.5rem; pointer-events: none; }
@@ -170,11 +169,9 @@ p { margin: 0; }
 }
 .poster::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(120% 90% at 50% 20%, transparent 50%, rgba(0, 0, 0, .6)); }
 .poster .presents { font: 400 .64rem/1.3 var(--f-mono); letter-spacing: .22em; text-transform: uppercase; opacity: .75; }
-.poster .marquee-title { flex: 1; display: grid; place-content: center; gap: .9rem; min-height: 0; }
+.poster .marquee-title { flex: 1; display: grid; place-content: center; min-height: 0; }
 .poster .title { font: 300 clamp(2.1rem, 3.6vw, 2.6rem)/1.05 var(--f-title); letter-spacing: .12em; text-wrap: balance; overflow-wrap: anywhere; margin-right: -.16em; }
 .poster .title.long { font-size: clamp(1.6rem, 2.8vw, 2rem); }
-.poster .rule { width: 2.5rem; height: 1px; background: var(--moon); margin-inline: auto; opacity: .7; }
-.poster .slogan { font-size: .9rem; line-height: 1.35; opacity: .8; text-wrap: balance; }
 .poster .billing { margin-top: .8rem; font: 400 .64rem/1.35 var(--f-marquee); letter-spacing: .07em; text-transform: uppercase; opacity: .6; }
 .caption { display: grid; gap: .5rem; margin-top: 1rem; }
 .caption h3 a { color: var(--fg); text-decoration: none; }
@@ -205,10 +202,6 @@ p { margin: 0; }
 .ticket-body .course a { color: var(--thermal-ink); text-decoration-color: var(--stamp); }
 .ticket-body .course a:hover { color: var(--stamp); }
 .ticket-body .meta { display: flex; justify-content: space-between; align-items: center; gap: .6rem; font: 400 .8rem/1.2 var(--f-mono); letter-spacing: .05em; color: #4b5059; }
-.stamp {
-  display: inline-block; font: 500 .7rem/1 var(--f-mono); letter-spacing: .16em; text-transform: uppercase;
-  color: var(--stamp); border: 2px solid var(--stamp); border-radius: 2px; padding: .22rem .35rem; transform: rotate(-5deg); opacity: .9;
-}
 .venue-line { margin-bottom: 1.6rem; color: var(--muted); }
 
 /* Hobbies: a blog */

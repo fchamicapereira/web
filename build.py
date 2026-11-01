@@ -27,8 +27,7 @@ GITHUB_USERNAME = "fchamicapereira"
 LINKEDIN_USERNAME = "fchamicapereira"
 CV = "/assets/pdf/cv.pdf"
 
-# The marquee's second line, and the line under it.
-MARQUEE_SUBTITLE = "Now showing · Systems & Networking"
+# The line under the marquee.
 TAGLINE = "PhD student at Instituto Superior Técnico, with a Carnegie Mellon affiliation. Researcher at INESC-ID."
 
 # How many news items the home page shows.
@@ -259,7 +258,7 @@ def marquee_html():
         return f'<span class="line {cls}" aria-hidden="true">{"".join(words)}</span>'
 
     name = NAME.upper()
-    return line(name, "big", loose=name.find("R", len(FIRST_NAME))) + "\n" + line(MARQUEE_SUBTITLE.upper(), "small")
+    return line(name, "big", loose=name.find("R", len(FIRST_NAME)))
 
 
 def projects_html():
@@ -282,8 +281,6 @@ def projects_html():
       <span class="presents">{esc(p['presents'])}</span>
       <div class="marquee-title">
         <span class="title{long}">{esc(title)}</span>
-        <span class="rule"></span>
-        <span class="slogan">{esc(p['slogan'])}</span>
       </div>
       <span class="billing">{esc(p['billing'])}</span>
     </div>
@@ -294,8 +291,7 @@ def projects_html():
     <div class="actions">{"".join(links)}</div>
   </div>
 </article>""")
-        label = f"{data['categories'].get(category, category)} · {category.capitalize()}"
-        out.append(f'<div class="showing">\n<p class="eyebrow">{esc(label)}</p>\n<div class="posters">\n{"".join(posters)}\n</div>\n</div>')
+        out.append(f'<div class="showing">\n<p class="eyebrow">{esc(category.capitalize())}</p>\n<div class="posters">\n{"".join(posters)}\n</div>\n</div>')
     return "\n".join(out)
 
 
@@ -304,11 +300,8 @@ def teaching_html():
     tickets = []
     serial = 237
     for course in data["course"]:
-        if course.get("current"):
-            corner = '<span class="stamp">Now showing</span>'
-        else:
-            corner = f"<span>Nº {serial:06d}</span>"
-            serial += 1009
+        corner = f"<span>Nº {serial:06d}</span>"
+        serial += 1009
         tickets.append(f"""<div class="ticket">
   <div class="stub" aria-hidden="true">Admit one</div>
   <div class="ticket-body">
