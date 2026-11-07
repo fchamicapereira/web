@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- A tiny CRT showing the marquee's F, hanging slightly loose. -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="65%">
+      <stop offset="0" stop-color="#eef2f5"/>
+      <stop offset=".55" stop-color="#a9c1d6"/>
+      <stop offset="1" stop-color="#4c5f71"/>
+    </radialGradient>
+    <pattern id="scan" width="64" height="3" patternUnits="userSpaceOnUse">
+      <rect width="64" height="1" fill="#000" opacity=".22"/>
+    </pattern>
+  </defs>
+  <rect x="2" y="5" width="60" height="54" rx="12" fill="#0d0e11" stroke="#2d3139" stroke-width="2"/>
+  <rect x="8" y="11" width="48" height="42" rx="9" fill="url(#glow)"/>
+  <g fill="#0d0e11" transform="rotate(-6 32 32)">
+    <rect x="23" y="18" width="8" height="28"/>
+    <rect x="23" y="18" width="19" height="6.5"/>
+    <rect x="23" y="29" width="15" height="6"/>
+  </g>
+  <rect x="8" y="11" width="48" height="42" rx="9" fill="url(#scan)"/>
+</svg>
