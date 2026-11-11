@@ -298,15 +298,12 @@ def projects_html():
 def teaching_html():
     data = load_toml("teaching.toml")
     tickets = []
-    serial = 237
     for course in data["course"]:
-        corner = f"<span>Nº {serial:06d}</span>"
-        serial += 1009
         tickets.append(f"""<div class="ticket">
   <div class="stub" aria-hidden="true">Admit one</div>
   <div class="ticket-body">
     <div class="course"><a href="{html.escape(course['url'])}">{esc(course['name'])}</a></div>
-    <div class="meta"><span>{esc(course['term'])}</span>{corner}</div>
+    <div class="meta"><span>{esc(course['term'])}</span></div>
   </div>
 </div>""")
     return (
