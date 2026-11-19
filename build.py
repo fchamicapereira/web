@@ -48,12 +48,17 @@ PAPER_BUTTONS = [
     ("pdf", "PDF", True),
     ("supp", "Supp", True),
     ("code", "Code", False),
+    ("artifact", "Artifact", False),
     ("eval", "Evaluation", False),
     ("poster", "Poster", True),
     ("slides", "Slides", True),
     ("website", "Web", False),
     ("talk", "Talk video", False),
 ]
+
+
+# A small trophy shown before a paper's award.
+AWARD_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 1.8h7v4a3.5 3.5 0 0 1-7 0z"/><path d="M4.5 3H1.8v1.2A2.6 2.6 0 0 0 4.6 6.8M11.5 3h2.7v1.2a2.6 2.6 0 0 1-2.8 2.6M8 9.3v3M5 14.3h6M6 12.3h4"/></svg>'
 
 
 def esc(text):
@@ -199,6 +204,10 @@ def paper_html(entry, coauthors):
     if fields.get("abbr", "").lower() not in ("", "article"):
         venue += f' <span class="tag">{esc(fields["abbr"])}</span>'
 
+    award = ""
+    if "award" in fields:
+        award = f'\n    <div class="award">{AWARD_ICON}{esc(latex_to_text(fields["award"]))}</div>'
+
     buttons, panels = [], []
     if "abstract" in fields:
         buttons.append(f'<button class="btn" type="button" aria-expanded="false" aria-controls="{key}-abstract">Abstract</button>')
@@ -224,7 +233,7 @@ def paper_html(entry, coauthors):
   <div class="film-body">
     <h3>{esc(latex_to_text(fields.get("title", "")))}</h3>
     <div class="authors">{authors_html(fields.get("author", ""), coauthors)}</div>
-    <div class="venue">{venue}</div>
+    <div class="venue">{venue}</div>{award}
     <div class="actions">{"".join(buttons)}</div>
     {"".join(panels)}
   </div>

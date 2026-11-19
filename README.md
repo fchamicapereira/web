@@ -34,10 +34,11 @@ Add an entry to `data/papers.bib`. Fields the site uses besides the usual ones:
 
 - `label`: venue shown under the authors, e.g. `{NSDI '24}`.
 - `abbr`: shown as a tag next to the venue unless it is `{article}`, e.g. `{poster}`.
+- `award`: shown in small gold type under the venue, e.g. `{Best Artifact Award}`.
 - `selected = {true}`: also list it under "Recent publications" on the home page.
 - `bibtex_show = {true}`: show the "BibTeX" button.
 - `pdf`, `slides`, `poster`, `supp`: a file name in `public/assets/pdf/` or a full URL.
-- `code`, `eval`, `website`, `talk`, `html`, `arxiv`: links shown as buttons.
+- `code`, `artifact`, `eval`, `website`, `talk`, `html`, `arxiv`: links shown as buttons.
 
 ## Adding a blog post
 

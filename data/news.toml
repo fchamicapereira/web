@@ -2,6 +2,10 @@
 # Only the month and year of `date` are shown. `text` may contain HTML links.
 
 [[item]]
+date = 2026-11-17
+text = '<a href="/publications/#knowledgeplane-hotnets26">Instantiating the Knowledge Plane</a> won the Best Artifact Award at HotNets ’26! Try the <a href="https://fchamicapereira.github.io/agentic-networks/demo/">artifact</a> yourself.'
+
+[[item]]
 date = 2026-10-22
 text = 'Major thematic change to the website. It’s now horror movie themed!'
 
